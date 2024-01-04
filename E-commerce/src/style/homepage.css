@@ -1,0 +1,137 @@
+.homePage {
+  display: flex;
+  /* height: 600px; */
+  /* padding: 20px; */
+  margin: 39px;
+  background-color: #d7ede7;
+  margin-top: 8px;
+}
+.rightSide {
+  margin-top: 120px;
+
+  width: 50%;
+}
+.align {
+  margin: 42px;
+}
+.heading {
+  font-family: cursive;
+  margin: 1px;
+  font-size: 48px;
+}
+.span {
+  font-family: cursive;
+  margin: 1px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.paragrapgh {
+  font-family: cursive;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 11px;
+}
+.leftSide {
+  width: 50%;
+}
+.center {
+  height: 300px;
+  width: 79.5em;
+  margin-left: 39px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d7ede7;
+  /* margin-bottom: -12px; */
+  margin-top: -32px;
+  box-shadow: 0px 0 10px gray;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block {
+  position: relative;
+  text-align: center;
+  border: 0.2px solid #00000026;
+  width: 308px;
+}
+
+.img {
+  width: 280px;
+  height: 261px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 12px;
+}
+.img:hover {
+  transform: scale(1.1);
+}
+
+.offer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255 255 255 / 70%);
+  padding: 7px;
+  font-size: 24px;
+  font-family: auto;
+}
+/* homepage.css */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 414px) {
+  .homePage {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftSide {
+    order: 2;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .rightSide {
+    order: 1;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  /* Adjust individual block styles */
+  .block {
+    text-align: center;
+  }
+  .center {
+    display: none;
+  }
+  /* Adjust image size */
+  .img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  /* Adjust eBay image width */
+  img[alt="ebay"] {
+    max-width: 400px;
+    margin-left: 0;
+    display: none;
+  }
+}
+
+/* Additional media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .paragrapgh {
+    font-size: 14px;
+  }
+}

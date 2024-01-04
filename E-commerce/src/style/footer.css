@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  width: 95%;
+  background-color: rgb(2 2 2 / 96%);
+  height: 50%;
+  margin-left: 33px;
+  color: ghostwhite;
+  gap: 10%;
+}
+ul {
+  list-style-type: none;
+}
+.gap {
+  background-color: rgb(2 2 2 / 96%);
+  color: white;
+  display: flex;
+  gap: 8%;
+  width: 95%;
+  margin-left: 33px;
+  margin-top: 2px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+display: none;
+  }
+}
